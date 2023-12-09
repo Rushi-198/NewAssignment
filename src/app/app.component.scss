@@ -1,22 +1,101 @@
 
+.top-card{
+    background-color: #f8e5e9;
+    border-radius: 16px;
+}
 
+.top-heading{
+    color: #ed5c6e;
+}
+
+.br-16{
+    border-radius: 16px !important;
+}
 .shadow {
-   
-    border-radius: 8%;
+    border-radius: 16px;
     background-color: #4d4cac;
 }
+
+.day-bar {
+      transform: rotate(90deg);
+      transform-origin:left;
+      width: 60%;
+      margin-left: 15px;
+      
+}
+
+.day-bar-2 {
+    transform: rotate(90deg);
+    transform-origin:left;
+    width: 60%;
+    margin-left: 60px;
+    
+}
+//////////
+/// 
+
+.progress-bar-vertical {
+    width: 20px;
+    min-height: 300px;
+    background: #d0cece;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;        
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+  }
+
+  
+  
+  .progress-bar-vertical .progress-bar {
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.6s ease;
+    -o-transition: height 0.6s ease;
+    transition: height 0.6s ease;
+  }
+  
+  
+  .progress-striped {
+    background-color: #ee5f5b;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(0deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  }
+.time-card {
+    position: relative;
+}
+hr{
+    background-color: #f2f2f2;
+    height: 3px;
+}
+.progress{
+    height: 8px !important;
+}
+.msg{
+    color: #9896a4;
+}
+
+
 
 
 .shadow1{
     background-color: #9698d6;
-    border-radius: 8%;
+    border-radius: 16px;
 }
 
 
+.h-370{
+    min-height: 470px;
+    max-height: 470px;
+}
 
 .shadow2{
     background-color: #ff808b;
-    border-radius: 8%;
+    border-radius: 16px;
 }
 
 
