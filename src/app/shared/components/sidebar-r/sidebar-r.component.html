@@ -38,8 +38,22 @@
     </div>
 </div>
   
+
+<div id="mySidenav" class="sidenav2 shadow-lg" #mySidenav2>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav2(mySidenav2)">&times;</a>
+    <a href="#"><i class="fa-solid fa-box  mr-3"></i>Dashboard</a>
+    <a href="#"><i class="fa-solid fa-message  mr-3"></i>Massages</a>
+    <a href="#"><i class="fa-solid fa-user-group mr-2"></i> Customers</a>
+    <a href="#"><i class="fa-solid fa-play  mr-3"></i>Campaigns</a>
+    <a href="#"><i class="fa-regular fa-calendar-days  mr-3"></i>Calender</a>
+    <a href="#"><i class="fa-solid fa-align-center  mr-3"></i>Content</a>
+    <a href="#"><i class="fa-solid fa-video  mr-3"></i>Videos</a>
+    <a href="#"><i class="fa-regular fa-file  mr-3"></i>Lists</a>
+</div>
+
+
 <div id="main" class="d-flex justify-content-between">
-    <span style="font-size:30px;cursor:pointer" (click)="openNav(mySidenav)">Logo </span>
+    <span style="font-size:30px;cursor:pointer" (click)="openNav2(mySidenav2)">Logo </span>
     <span style="font-size:30px;cursor:pointer" (click)="openNav(mySidenav)">&#9776; </span>
 </div>
 
