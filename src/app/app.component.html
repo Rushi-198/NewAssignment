@@ -1,4 +1,18 @@
-<body class="color">
+
+
+
+
+
+
+
+
+
+
+
+<app-sidebar-r [userObj]="userData"></app-sidebar-r>
+
+
+
 
 
 
@@ -34,7 +48,7 @@
 
                 <div class="card top-card">
                     <div class="card-body">
-                        <h5 class="mb-3 top-heading">Welcome back Anna!</h5>
+                        <h5 class="mb-3 top-heading">Welcome back {{userData.username}}</h5>
                         <p>you earned 80% of your goals of your week!
                             <br>
                             Keep it up & improve the Results!
@@ -225,5 +239,3 @@
         </div>
     </div>
 
-
-</body>

@@ -1,0 +1,49 @@
+<div id="mySidenav" class="sidenav shadow-lg" #mySidenav>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav(mySidenav)">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+
+  
+    <div class="ml-4 mt-5">
+        <div class="row" *ngFor="let course of coursesArray">
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <span>icon</span> 
+                    <div class="ml-3">
+                        <p class="mb-0">{{course.subject}}</p>
+                        <p class="msg">{{course.value < 50 ? 'Basic' : 'Advance'}}</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-md-6">
+                <div class="progress">
+                    <div class="progress-bar bg-info"  role="progressbar" [style]="'width :'+ course.value+'%'"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+
+        <h5 class="my-3">Remiders</h5>
+        <div *ngFor="let rem of remindersArray">
+            <div class="d-flex">
+                <span>icon</span> 
+                <div class="ml-3">
+                    <p class="mb-0">{{rem.title}}</p>
+                    <p class="date">{{rem.datetime | date : 'fullDate'}}</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+  
+<div id="main" class="d-flex justify-content-between">
+    <span style="font-size:30px;cursor:pointer" (click)="openNav(mySidenav)">Logo </span>
+    <span style="font-size:30px;cursor:pointer" (click)="openNav(mySidenav)">&#9776; </span>
+</div>
+
+
+
+
+
